@@ -1,0 +1,22 @@
+{
+    "proxy_database": {
+        "host": "redacted",
+        "user": "redacted",
+        "password": "redacted",
+        "database": "redacted"
+    },
+    
+    "crawl_database": {
+        "host": "redacted",
+        "user": "redacted",
+        "password": "redacted",
+        "database": "redacted"
+    },
+    "init_db_connection":false,
+    "global_queue_id": 1,
+    "max_bad_count": 3,
+    "max_blacklist_count": 10,
+    "sync_interval": 800,
+    "blacklist_wait_time": 42600,
+    "min_active_cache": 20
+}

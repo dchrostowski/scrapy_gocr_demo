@@ -1,0 +1,30 @@
+This project is going to use Python3.  Because there is no good reason not to.  We want to move forward, not stand still.
+
+How to setup virtual environment using Ubuntu or Debian:
+
+1. Get pip if you don't have it already:
+`sudo apt-get install python-pip`  (or is it `pip-python?`)
+
+2. `pip install virtualenv`
+
+3. `cd project_folder`
+
+4. `virtualenv -p /usr/bin/python3.4 lib-crawl-python-env`
+
+5. `source lib-crawl-python-env/bin/activate
+
+6. If you see a requirements.txt and you just setup a new environment or if yours is out of date, run pip install -r requirements.ttxt
+
+Install any and all pip packages you need while the virtual env is activated.  e.g.:
+
+`pip install requests`
+
+When done, deactivate the virtual environment by running:
+
+`deactivate`
+
+If any changes were made, export out to requirements.txt:
+
+pip freeze > requirements.txt
+
+DO NOT PUSH THE VIRTUALENV TO GIT. Add it to .gitignore.  Totally unnecessary and a complete waste of resources.  Simply push reuqirements.txt so that others can install modules and sync their modules with everyone else.
