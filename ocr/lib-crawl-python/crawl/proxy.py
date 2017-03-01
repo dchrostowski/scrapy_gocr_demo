@@ -52,6 +52,7 @@ class Proxy(object):
 
     @address.setter
     def address(self, addr):
+        adr_re = r'^[\d\.]+$'
         if not re.match(adr_re, addr):
             raise Exception("Invalid address only IPV4 supported.")
         else:
