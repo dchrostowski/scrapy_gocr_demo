@@ -1,6 +1,6 @@
 Cython==0.25.2
 Django==1.11.29
-Pillow==8.1.1
+Pillow==9.0.1
 PyDispatcher==2.0.5
 PyOpenGL==3.0.2
 Pyrex==0.9.8.5
